@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Titan+One&display=swap');
+
+body{
+    font-family: Roboto;
+}
+
+header{
+    background-image:url(../images/apple-pie.jpg);
+    background-size: cover;
+    background-position:center;
+    text-align: center;
+    font-size: 50px;
+    color:white;
+    text-align:center;
+    padding: 150px;
+}
+
+#introduction{
+    text-align: center;
+    margin:50px 100px;
+    font-size: 25px;
+    color:black;
+}
+
+h2{
+    font-weight: bold;
+}
+
+#recipe-info{
+    text-align: center;
+}
+
+#recipe-info img{
+    height:80px;
+}
+
+#ingredients{
+    text-align:left;
+    margin:50px 100px 50px ;
+}
+
+ul li::marker{
+    content:"- "
+}
+
+#cooking-info{
+    text-align:center;
+}
+
+#cooking-info img{
+    height:80px;
+}
+
+hr {
+    margin:50px 100px;
+}
+
+#directions{
+    text-align:left;
+    margin:50px 100px 50px;
+}
+
+ol {
+    list-style: none;
+    counter-reset: my-counter;
+
+}
+
+ol li {
+    counter-increment: my-counter;
+}
+
+ol li::before{
+    content: counter(my-counter) ") ";
+}
